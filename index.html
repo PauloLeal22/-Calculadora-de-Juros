@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Juros</title>
+</head>
+<body>
+    <div class="container">
+        <section id="card-juros-simples" class="card">
+            <div class="titulo-card">
+                <h2>Calculadora de Juros</h2>
+            </div>
+            <div class="conteudo-card">
+                <input type="number" id="txt-capital" placeholder="Capital inicial" min="0">
+                <input type="number" id="txt-juros" placeholder="Juros a serem aplicados(%)">
+                <input type="number" id="txt-tempo" placeholder="tempo estimado (meses)" min="0">
+                <div class="area-radio">
+                    <input type="radio" id="juros-simples">
+                    <label for="juros-simples" class="radio-button">Juros Simples</label>
+                    <input type="radio" id="juros-comp">
+                    <label for="juros-comp" class="radio-button">Juros Compostos</label>
+                </div>
+                <button id="calcular">CALCULAR</button>
+                <div class="area-resultado">
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
